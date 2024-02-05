@@ -1,1 +1,1 @@
-Creating Student class in java
+Creating a Java program, making a package & Creating a Student class
