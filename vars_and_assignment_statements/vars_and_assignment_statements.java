@@ -7,11 +7,9 @@ class VarsAndAssigmnentStatemens {
         // Setting variables
         String hello;
         hello = "Hello, world!";
-        int day;
+        int day, month, year;
         day = 6;
-        int month;
         month = 2;
-        int year;
         year = 2024;
 
         // Printing some stuff with variables
