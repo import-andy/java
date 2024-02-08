@@ -1,6 +1,16 @@
 /*
 JAVA BASICS:
- 
+a = b   assignes new value for 'a' from 'b'
+a == b  compares the value or equality
+
+True = 1
+False = 0
+
+% - remainder of:
+    101 % 4 = 1
+// - floor division:
+    101 // 4 = 25
+
 TYPES OF DATA:
     Primitive ones:
         1. byte - 8 bits (binary digits 0 and 1) [2^-7; 2^7] (max 127)
