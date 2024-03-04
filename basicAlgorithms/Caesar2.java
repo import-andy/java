@@ -5,16 +5,16 @@ public class Caesar2 {
 	// abcdefghijklkmnopqrstuvwxyz
 	// ABCDEFGHIJKLKMNOPQRSTUVWXYZ
 
-	public String encrypt(String plainText, int offset){
+	public String encrypt(String plainText, int offset){  // declaring a method
 		String cipher = "";
 		char[] arr = plainText.toCharArray();
 		for(int i = 0; i < arr.length; i++){
 			int numericVal = (int) arr[i];
-			if (numericVal == 32) {
+			if (numericVal == 32) {  // for space characteras
 				cipher += arr[i];
-			} else if (Character.isUpperCase(arr[i])){
+			} else if (Character.isUpperCase(arr[i])){  // for uppercase characters
 				cipher += (char) (((numericVal + offset-65) % 26) + 65);
-			} else {
+			} else {  // for lowercase characters
 				cipher += (char) (((numericVal + offset-97) % 26) + 97);
 			}
 		}
