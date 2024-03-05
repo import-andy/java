@@ -10,19 +10,20 @@ public class Runner {
 
         System.out.println("Student Object ID from Runner: " + s);
 
-        s.sid = 62158454;
-        s.name = "Andrii Skvortsov";
-        s.dob = LocalDate.now();
+        // using setters
+        s.setSid(621584540);
+        s.setName("Andrii Skvortsov");
+        s.setDob(LocalDate.now());
+        s.setRegistered(true);
 
         // invoking methods
-        s.register();
         s.study();
         s.execute();
 
         // accessing the state
-        System.out.println(s.sid);
-        System.out.println(s.name);
-        System.out.println(s.dob);
-        System.out.println(s.registered);
+        System.out.println(s.getSid());
+        System.out.println(s.getName());
+        System.out.println(s.getDob());
+        System.out.println(s.isRegistered());
     }
 }
