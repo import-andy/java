@@ -34,9 +34,10 @@ QUOTES:
     Double quotes for more that 1 character: "GG"
 
 NAMES:
-    Camel case
-    For classes start with a capital letter: class ArtNuvoe
-    For everything elese like var start with a small letter: String mySurname
+    CamelCase
+    StartWithCapitalLetter - for classes
+    startWithLowercaseLetter - for everything elese like var
+    UPPERCASE - for constants
 
 VARIABLES
     1. Instance variables :
