@@ -35,9 +35,9 @@ QUOTES:
 
 NAMES:
     CamelCase
-    StartWithCapitalLetter - for classes
-    startWithLowercaseLetter - for everything elese like var
-    UPPERCASE - for constants
+    class StartWithCapitalLetter - for classes
+    String startWithLowercaseLetter - for everything elese like var
+    static UPPERCASE - for constants
 
 VARIABLES
     1. Instance variables :

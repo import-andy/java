@@ -13,7 +13,7 @@ public class Student {
     private LocalDate dob;
     private boolean registered = false;
 
-    // constructor
+    // constructor; no return type; name matches class name
     public Student() {
         System.out.println("The ID of this Student object is " + this);
     }
@@ -56,11 +56,14 @@ public class Student {
         this.registered = true;
     }
 
-    protected void study() {
-        System.out.println("Student " + name + " is studying.");
+    protected String study(double hours, int level) {
+        double total = hours * level;
+        String message = "Studying..." + total;
+        return message;
     }
 
-    protected void execute() { // bad name for a method
+    protected boolean execute(String command) { // bad name for a method
         System.out.println("Executed.");
+        return command.endsWith("!");
     }
 }
