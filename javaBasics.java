@@ -13,14 +13,15 @@ False = 0
 
 TYPES OF DATA:
     Primitive ones:
-        1. byte - 8 bits (binary digits 0 and 1) [2^-7; 2^7] (max 127)
-        2. short - 16 bits: [2^-15; 2^15] (max 65,535)
-        3. int - 32 bits: [2^-31; 2^31] (max 2,147,483,647)
-        4. long - 64 bits: [2^-63; 2^63] 
-        5. float - 1 + 8 + 23 = 32 bits floating-point number: [2^-149; (2-2^-23)2^127] (7-9 p.o.d.)
-        6. double - 1 + 11 + 52 = 64 bits floating-point number:  [2^1074; (2-2^-52)2^1023] (16-19 p.o.d.)
-        7. char - Unicode character, 16 bits
-        8. boolean - true, false
+        boolean - true, false
+        char - one-character Unicode value, 16 bits
+        bit = 1 bit (smallest piece) - can be either 0 or 1
+        byte = 8 bits. from -128 to 127
+        short = 16 bits: [2-15; 215], from -32,768 to +32,767
+        int = 32 bits: [2-31; 231], from -2,147,483,648 to 2,147,483,647
+        long = 64 bits: [2-63; 263], from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+        float = 32 bits (1 + 8 + 23 bit) storing 6 to 7 decimal digits
+        double = 64 bits (- 1 + 11 + 52) storing 15 decimal digits
     These are numeric convertible types.
     Represented by a sequence of bits (0 and 1).
     Default value is zero.
@@ -28,6 +29,12 @@ TYPES OF DATA:
     More complex ones:
         java.lang.String - string
         java.util.Date - date
+
+LOGICAL OPERATORS:
+    NOT !
+    AND &&
+    OR ||
+    XOR (Exclusive OR) ^
 
 QUOTES:
     Single quotes for single characters: 'G'
@@ -38,6 +45,12 @@ NAMES:
     class StartWithCapitalLetter - for classes
     String startWithLowercaseLetter - for everything elese like var
     static UPPERCASE - for constants
+    containsNumber123
+Prohibited names:
+    withDashes-123
+    123startsWithNumber
+    containsSpaces 123
+    should not start with underscore _ or dollar sign $ characters
 
 VARIABLES
     1. Instance variables :
@@ -53,8 +66,8 @@ VARIABLES
             they were declared. Local variables are not given default values.
 
 COMMAND LINE COMMANDS:
-javac Runner.java - compile Runner.java  (press "Tab" to get the directory easier in a package structure)
-java Runner.java - run Runner.java
+javac ie/atu/dip/Entity.java - compile (press "Tab" to get the directory easier in a package structure)
+java ie.atu.dip.Entity - run 
 
 
  */
